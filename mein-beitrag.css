@@ -1,0 +1,7 @@
+#row-logos img {
+    margin: 0.5em;
+}
+
+.goal-item:hover {
+    transform: scale(1.1);
+}
