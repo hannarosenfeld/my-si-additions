@@ -16,12 +16,12 @@ $(document).ready(function() {
     /* When hovering over logos, give images a border and highlight container */    
     $('.org-logo').hover(function(){
         var relatedImage = "." + $(this).attr("data-id");
-        $(relatedImage).css('border', '4px solid white');
+       $(relatedImage).css('box-shadow', '0px 0px 0px 4px white');
         $(relatedImage).parents('.panel').css("filter", "saturate(1.5)");
     },  
                          function () {
                              var relatedImage = "." + $(this).attr("data-id");
-                             $(relatedImage).css("border","none");
+                             $(relatedImage).css("box-shadow","none");
                              $(relatedImage).parents('.panel').css("filter", "none");
                          }
                         );
