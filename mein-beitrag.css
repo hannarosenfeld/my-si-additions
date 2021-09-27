@@ -1,11 +1,18 @@
-#row-logos img {
-    margin: 0.5em;
-}
-
-.goal-item {
-    margin: 0.5em;
+.goal-item, .org-logo {
+  margin: 0.45em;
 }
 
 .goal-item:hover {
-    transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+.panel-saturate .panel {
+  filter: saturate(1.5);
+}
+.panel-saturate .panel .goal-item {
+  filter: saturate(0.7);
+}
+
+.image-border {
+  box-shadow: 0px 0px 0px 4px white;
 }
