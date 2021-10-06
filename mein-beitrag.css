@@ -1,18 +1,33 @@
-.goal-item, .org-logo {
+.goal-item {
   margin: 0.45em;
 }
 
-.goal-item:hover {
+.org-logo {
+    margin: 1em;
+}
+
+#row-logos a{
+    width: 20%;
+    margin: 0.8em;
+}
+
+.panel {
+    padding-left: 1em;
+}
+
+.goal-item:hover, .org-logo:hover {
   transform: scale(1.2);
 }
 
-.panel-saturate .panel {
-  filter: saturate(1.5);
+.panel-saturate  {
+    filter: saturate(1.9);
 }
-.panel-saturate .panel .goal-item {
-  filter: saturate(0.7);
+
+.panel-saturate .goal-item {
+  filter: saturate(0.6);
 }
 
 .image-border {
   box-shadow: 0px 0px 0px 4px white;
 }
+

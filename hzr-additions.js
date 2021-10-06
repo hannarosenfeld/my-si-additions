@@ -15,12 +15,12 @@ $(document).ready(function() {
     $(".org-logo").hover(function(){
         var relatedImage = "." + $(this).attr("data-id");
         $(relatedImage).addClass("image-border");
-        $(relatedImage).parents(".row").addClass("panel-saturate");
+        $(relatedImage).parents(".panel").addClass("panel-saturate");
     },  
                          function () {
                              var relatedImage = "." + $(this).attr("data-id");
                              $(relatedImage).removeClass("image-border");
-                             $(relatedImage).parents(".row").removeClass("panel-saturate");
+                             $(relatedImage).parents(".panel").removeClass("panel-saturate");
                          });
     
     /* Written by hannazrosenfeld@gmail.com (September 2021) */
