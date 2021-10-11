@@ -1,18 +1,158 @@
-.goal-item, .org-logo {
-  margin: 0.45em;
+.org-logo {
+    margin: 1rem;
+    padding: 0 auto;
+    width: 100px;
 }
 
-.goal-item:hover {
+#row-selector {
+    padding-bottom: 2em;
+}
+
+#row-logos {
+    justify-content: center;
+    margin: 0.8em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#row-logos a{
+    margin: 0.8em;
+}
+
+.panel {
+    padding-left: 1em;
+}
+
+.goal-item:hover, .org-logo:hover {
   transform: scale(1.2);
 }
 
-.panel-saturate .panel {
-  filter: saturate(1.5);
+.panel-saturate  {
+    filter: saturate(1.9);
 }
-.panel-saturate .panel .goal-item {
-  filter: saturate(0.7);
+
+.panel-saturate .goal-item {
+  filter: saturate(0.6);
 }
 
 .image-border {
   box-shadow: 0px 0px 0px 4px white;
 }
+
+
+/* Laptop View*/
+@media only screen and (min-width: 700px) {
+    .mein-beitrag-mobile {
+        display: none;
+    }
+    .goal-item {
+        margin: 0.45em;
+    }
+}
+
+
+/* Tablet View */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .mein-beitrag-laptop {
+        display: none;
+    }
+    .mein-beitrag-mobile {
+        display: block;
+    }
+
+    #row-logos {
+        margin: 0.52em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #row-logos a {
+        width: 20%;
+        padding: 1em !important;
+        margin: 0px;
+    }
+    #row-logos img {
+        width: 20%;
+        padding: 1em !important;
+    }
+    
+}
+
+
+/* Mobile View*/
+@media (min-width: 200px) and (max-width: 800px) {  
+    .mein-beitrag-laptop {
+        display: none;
+    }
+
+    #row-selector #selector #select-goal img {
+        padding: 1em;
+    }
+
+    #row-selector #selector #select-goal {
+        padding-bottom: 0px !important;
+    }
+    
+
+    .row {
+        margin: 0px !important;
+    }
+
+    
+    #row-logos img {
+        display: flex;
+        margin-top: 1em;
+        padding: 0px;
+    }
+
+    
+    #row-logos a {
+        display: flex !important!
+        width: 28%;
+        padding: 0.1em !important;
+        margin: 0.2em auto;
+    }
+    
+    #select-goal h3 {
+        font-size: 1.2em;
+        margin: 0px;
+    }
+
+
+    #select-goal img {
+        max-width: 55px !important;
+        padding: none !important;
+        margin: none !important;
+    }
+
+    .goal-item {
+        margin: 0.2em;
+    }
+    
+    .org-logo {
+        margin: 0.1em !important;
+    }
+    #row-selector #selector #select-goal {
+        padding-bottom: 0px !important!;
+    }
+    #row-selector #selector #select-goal .panel {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    #row-selector #selector #select-goal .panel .panel-body {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    
+    .panel-body {
+        padding: 0px !important;
+    }
+
+    .panel-body .col-md-4{
+        display: none;
+    }
+}
+
